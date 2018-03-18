@@ -11,15 +11,7 @@
 |
 */ 
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/ola', function() {
-	return view('hello');
-});
-
-Route::get('form', function() {
+Route::get('/', function() {
 	return view('form');
 });
 
@@ -27,4 +19,14 @@ Route::post('register', "UserController@register");
 
 Route::get('all', "UserController@all");
 
-Route::get('/user/{id}', "UserController@find");
+Route::get('/ViewUser/{id}', "UserController@find");
+
+Route::get('/Delete/{id}', "UserController@delete");
+
+Route::get('/EditProfile/{id}', "UserController@editProfile");
+
+Route::patch('/UpdateProfile/{id}', "UserController@updateProfile");
+
+Route::get('/ChangePassword/{id}', "UserController@changePassword");;
+
+Route::patch('/UpdatePassword/{id}', "UserController@updatePassword");
