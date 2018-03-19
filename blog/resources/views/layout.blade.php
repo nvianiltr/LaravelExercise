@@ -10,15 +10,19 @@
 	</style>
 </head>
 <body>
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<h3 class="navbar-brand">Laravel Exercise</h3>
-			</div>
-			
-			<ul class="nav navbar-nav">
-				<li><a href="/">Register</a></li>
-				<li><a href="/all">View All</a></li>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Laravel Exercise</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item ">
+					<a class="nav-link" href="/">Register <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/all">View All</a>
+				</li>
 			</ul>
 		</div>
 	</nav>
